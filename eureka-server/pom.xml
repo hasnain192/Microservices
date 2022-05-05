@@ -61,7 +61,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <repository>hasnain2/eureka-server</repository>
+                    <repository>hasnain2/eurekha-server</repository>
                     <tag>${project.version}</tag>
                     <useMavenSettingsForAuth>true</useMavenSettingsForAuth>
                 </configuration>

@@ -22,4 +22,9 @@ public class UserServiceImpl implements UserService {
         return this.userList.stream().filter(
                 user -> user.getUserId().equals(id)).findAny().orElse(null);
     }
+
+    @Override
+    public List<User> getUsers() {
+        return userList;
+    }
 }

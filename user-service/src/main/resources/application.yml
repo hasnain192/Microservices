@@ -1,3 +1,4 @@
+
 spring:
   application:
     name: user-serviec
@@ -5,3 +6,5 @@ spring:
 eureka:
   instance:
     hostname: localhost
+server:
+  port: 9001
