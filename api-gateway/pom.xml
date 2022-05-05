@@ -66,6 +66,9 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <finalName>api-gateway</finalName>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>com.spotify</groupId>
@@ -81,7 +84,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <repository>hasnain2/api-gatway</repository>
+                    <repository>hasnain2/api-gateway</repository>
                     <tag>${project.version}</tag>
                     <useMavenSettingsForAuth>true</useMavenSettingsForAuth>
                 </configuration>
