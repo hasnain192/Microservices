@@ -1,8 +1,9 @@
 package com.codefider.contactservice.entity;
 
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collation = "Contacts-List")
+@Document(collection = "Contacts-List")
 public class Contact {
 
     private Long cId;

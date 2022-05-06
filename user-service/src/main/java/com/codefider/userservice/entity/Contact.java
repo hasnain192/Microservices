@@ -1,7 +1,14 @@
 package com.codefider.userservice.entity;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+import javax.annotation.Generated;
+
+@Document(collection = "Contacts-List")
 public class Contact {
 
+    @Id
     private Long cId;
     private String email;
     private String contactName;

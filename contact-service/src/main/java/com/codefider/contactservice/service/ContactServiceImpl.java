@@ -35,4 +35,10 @@ public class ContactServiceImpl implements ContactService{
         contactRepository.save(contact);
         return contact;
     }
+
+    @Override
+    public List<Contact> getAllContacts() {
+        List<Contact> contactList=contactRepository.findAll();
+        return contactList;
+    }
 }

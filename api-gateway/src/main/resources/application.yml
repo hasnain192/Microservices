@@ -1,13 +1,9 @@
 server:
   port: 8999
-
-eureka:
-  instance:
-    hostname: localhost
+# below config for routing url for end points
 spring:
   application:
     name: api-gateway
-  cloud:
     gateway:
       routes:
         - id: user-serviec
