@@ -3,6 +3,9 @@
  Dirctor of : Codefider private Limited.
  www.codefider.com
  
+ Kubernates configuration link:
+ https://github.com/hasnain192/Springboot-k8s-confi-files.git
+ 
 Eureka-server:
 its used as service registry for register all others microservices, like what are applications are running.
 
