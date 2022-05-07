@@ -14,4 +14,10 @@ It's used for circuit breaker , to visualize which apis are failing and which ap
 ex: suppose we are calling some rest api inside user-service
 if contact-services apis are down then we will send time out error
 
+Zipkin :
+Added Zipkin and sleuth all microservices for log tracing .
+Imp:- We have to pull zipkin docker image or download zipkin application then configure zipkin server url
+in application.yml files to call zipkin server 
+ex:  zipkin:
+base-url: http://localhost:9411/
 
