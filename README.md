@@ -1,3 +1,4 @@
+ feature/CloudConfig-Zipkin
 Eureka-server:
 its used as service registry for register all others microservices, like what are applications are running.
 
@@ -20,4 +21,3 @@ Imp:- We have to pull zipkin docker image or download zipkin application then co
 in application.yml files to call zipkin server 
 ex:  zipkin:
 base-url: http://localhost:9411/
-
