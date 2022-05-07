@@ -1,5 +1,5 @@
 Eureka-server:
-its used as service registry for register all others microservices, like what are applications are working
+its used as service registry for register all others microservices, like what are applications are running.
 
 api-gateway:
 User should heat api-gateway to get details from other services 
