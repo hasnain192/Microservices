@@ -1,4 +1,9 @@
  feature/CloudConfig-Zipkin
+ 
+ Author: Md Hasnain
+ Dirctor of : Codefider private Limited.
+ www.codefider.com
+ 
 Eureka-server:
 its used as service registry for register all others microservices, like what are applications are running.
 
