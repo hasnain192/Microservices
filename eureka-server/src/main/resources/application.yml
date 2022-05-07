@@ -6,21 +6,21 @@ spring:
     name: EUREKA-SERVER
   config:
     import-check.enabled: false
-eureka:
-  client:
-    register-with-eureka: false
-    fetch-registry: false
-  server:
-    wait-time-in-ms-when-sync-empty: 0
-
 #eureka:
-#  instance:
-#    hostname: "${HOSTNAME}.eureka"
 #  client:
 #    register-with-eureka: false
 #    fetch-registry: false
-#    service-url:
-#      defaultZone: ${EUREKA_SERVER_ADDRESS}
 #  server:
-
 #    wait-time-in-ms-when-sync-empty: 0
+
+eureka:
+  instance:
+    hostname: "${HOSTNAME}.eureka"
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: ${EUREKA_SERVER_ADDRESS}
+  server:
+
+    wait-time-in-ms-when-sync-empty: 0
