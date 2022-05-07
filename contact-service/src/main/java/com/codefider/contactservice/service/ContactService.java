@@ -10,4 +10,6 @@ public interface ContactService {
 
     public List<Contact> listOfContact(Long userId);
     public Contact saveContact(Contact contact);
+
+    List<Contact> getAllContacts();
 }

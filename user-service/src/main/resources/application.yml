@@ -1,10 +1,28 @@
+server:
+  port: 9001
 
 spring:
   application:
     name: user-serviec
 
-eureka:
-  instance:
-    hostname: localhost
-server:
-  port: 9001
+
+  zipkin:
+    base-url: http://localhost:9411/
+#  cloud:
+#    config:
+#      enabled: true
+#      uri: http://localhost:9296
+#
+## below commented lines for local configuration  without docker and kubernates
+##eureka:
+##  instance:
+##    hostname: localhost
+#eureka:
+#  instance:
+#    hostname: eureka-0
+#    prefer-ip-address: true
+#  client:
+#    register-with-eureka: true
+#    fetch-registry: true
+#    service-url:
+#      defaultZone: http://eureka-0.eureka.default.svc.cluster.local:8761/eureka

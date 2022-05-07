@@ -15,14 +15,21 @@ public class ContactController {
     @Autowired
     private ContactService contactService;
 
+    @GetMapping("/getAllContact")
+    public List<Contact> contactList() {
+        List<Contact> contactList = contactService.getAllContacts();
+        return contactList;
+
+    }
+
     @GetMapping("/user/{userId}")
-    public List<Contact> getContacts(@PathVariable("userId") Long userId){
+    public List<Contact> getContacts(@PathVariable("userId") Long userId) {
         return contactService.listOfContact(userId);
     }
 
     @PostMapping("/saveContact")
-    public ResponseEntity<?> addContact(@RequestBody Contact contact){
-        Contact save=contactService.saveContact(contact);
+    public ResponseEntity<?> addContact(@RequestBody Contact contact) {
+        Contact save = contactService.saveContact(contact);
         return ResponseEntity.ok(save);
 
     }

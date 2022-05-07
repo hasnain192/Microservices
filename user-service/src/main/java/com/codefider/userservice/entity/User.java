@@ -1,13 +1,19 @@
 package com.codefider.userservice.entity;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
 import java.util.ArrayList;
 import java.util.List;
 
+@Document(collection = "User-List")
 public class User {
+
 
     private Long userId;
     private String name;
     private String phone;
+
 
     List<Contact> contacts = new ArrayList<>();
 

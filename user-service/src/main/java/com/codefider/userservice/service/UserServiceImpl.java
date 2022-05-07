@@ -1,6 +1,8 @@
 package com.codefider.userservice.service;
 
 import com.codefider.userservice.entity.User;
+import com.codefider.userservice.repository.UserRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Arrays;
@@ -10,6 +12,9 @@ import java.util.List;
 public class UserServiceImpl implements UserService {
 
     // TODO Load from data base
+
+    @Autowired
+    private UserRepository userRepository;
 
     List<User> userList = Arrays.asList(
             new User(1311L, "Hasnain", "9182325188"),
@@ -26,5 +31,11 @@ public class UserServiceImpl implements UserService {
     @Override
     public List<User> getUsers() {
         return userList;
+    }
+
+    @Override
+    public void saveUser(User user) {
+
+        userRepository.save(user);
     }
 }
